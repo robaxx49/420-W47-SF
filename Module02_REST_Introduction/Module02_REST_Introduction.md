@@ -29,7 +29,7 @@
 - Reprenez la proposition de correction du Module 1 ou votre propre code.
 - Ajoutez le projet "M01_DAL_Import_Munic_REST_JSON"
 - Ajoutez les packages Nuget "Microsoft.AspNet.WebApi.Client" (facilite la création de requêtes HTTP) et "Newtonsoft.Json" ((Dé)sérialisation JSON)
-- Ajoutez-y une classe qui implante l'interface "IDepotImportationMunicipalite"
+- Ajoutez-y une classe qui implante l'interface "IDepotImportationMunicipalites"
 - Dans le constructeur, instanciez un HttpClient que vous allez garder dans une donnée membre
 - Codez la méthode "LireMunicipalite" :
   - Spécifiez la bonne adresse de base : "https://www.donneesquebec.ca"
@@ -85,8 +85,8 @@ Pour tester l'exercice, ma fille s'est donnée à fond : les visages sont pench�
 
 - Créez une nouvelle solution avec un projet de type console
 - Le projet console (interface utilisateur) doit proposer un menu qui permet :
-  - De rechercher les villes disponibles à partir des données de latitude et de longitude
-  - D'afficher la météo d'une ville saisie (Le nom de la ville et non son woeid)
+  - De rechercher les villes disponibles à partir de leurs noms et d'en déduire la latitude et la longitude
+  - D'afficher la météo d'une ville saisie
   - De quitter le programme
 - Avant d'aller plus loin, essayez de comprendre un peu mieux les données que vous allez manipuler en naviguant les URIs suivantes :
   - https://geocoding-api.open-meteo.com/v1/search?name=Québec
